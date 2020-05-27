@@ -32,18 +32,18 @@ const carrito = [
 
 //  EJERCICIO -1-  Mostrar carrito de compra 
 
-//   for ( i=0; i<carrito.length; i++){
-//      console.log("-------Producto--"+":"+i)
-//      imprimir(carrito[i])
-//   }
+  for ( i=0; i<carrito.length; i++){
+      console.log("-------Producto--"+":"+i)
+      imprimir(carrito[i])
+   }
 
-//  function imprimir(producto){
-//     console.log("id:"+producto.id)
-//     console.log("name:"+producto.name)
-//     console.log("price:"+producto.price)
-//     console.log("count:"+producto.count)
-//     console.log("premium:"+producto.premium)
-//   }
+  function imprimir(producto){
+     console.log("id:"+producto.id)
+     console.log("name:"+producto.name)
+     console.log("price:"+producto.price)
+     console.log("count:"+producto.count)
+     console.log("premium:"+producto.premium)
+  }
 
 
 //  EJERCICIO -2-  Eliminar producto con  id: 54657
