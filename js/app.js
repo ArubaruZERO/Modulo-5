@@ -32,55 +32,55 @@ const carrito = [
 
 //  EJERCICIO -1-  Mostrar carrito de compra 
 
-  for ( i=0; i<carrito.length; i++){
-     console.log("-------Producto--"+":"+i)
-     imprimir(carrito[i])
-  }
+//   for ( i=0; i<carrito.length; i++){
+//      console.log("-------Producto--"+":"+i)
+//      imprimir(carrito[i])
+//   }
 
-// function imprimir(producto){
-    console.log("id:"+producto.id)
-    console.log("name:"+producto.name)
-    console.log("price:"+producto.price)
-    console.log("count:"+producto.count)
-    console.log("premium:"+producto.premium)
-  }
+//  function imprimir(producto){
+//     console.log("id:"+producto.id)
+//     console.log("name:"+producto.name)
+//     console.log("price:"+producto.price)
+//     console.log("count:"+producto.count)
+//     console.log("premium:"+producto.premium)
+//   }
 
 
 //  EJERCICIO -2-  Eliminar producto con  id: 54657
 
-  elementoEliminado = () => carrito.splice(i,1);
+   elementoEliminado = () => carrito.splice(i,1);
 
-  for (i=0; i<carrito.length;i++){
-     if(carrito[i].id == 54657 ) {
-        console.log("el elemento eliminado estaba en la posicion"+ ":"+ i )
-        elementoEliminado()
-     }
+   for (i=0; i<carrito.length;i++){
+      if(carrito[i].id == 54657 ) {
+         console.log("el elemento eliminado estaba en la posicion"+ ":"+ i )
+         elementoEliminado()
+      }
 
-  }
+   }
 
 
 
 
 //  EJERCICIO -3-  Total del carrito de compra
 
-  let total = 0
-  for (i=0;i<carrito.length;i++){
-      total = total + (carrito[i].price * carrito[i].count); 
-  }
+   let total = 0
+   for (i=0;i<carrito.length;i++){
+       total = total + (carrito[i].price * carrito[i].count); 
+   }
 
-  console.log(total);
+   console.log(total);
 
 
 
 //  EJERCICIO -4-  Filtrar los productos que sean prime
 
- for(i=0;i<carrito.length;i++){
-     console.log("elemento"+i)
-      if (carrito[i].premium === true){
-          console.log("este elemento es premium")
-     }else{
-        console.log("no es prime")
-     }
+  for(i=0;i<carrito.length;i++){
+      console.log("elemento"+i)
+       if (carrito[i].premium === true){
+           console.log("este elemento es premium")
+      }else{
+         console.log("no es prime")
+      }
   }
 
 //  EJERCICIO -5-  Si todos los productos son prime mensaje "Pedido sin gastos" 
@@ -90,8 +90,8 @@ const carrito = [
 
 for (i=0;i<carrito.length;i++){ 
  if (carrito[0].premium == true && carrito[1].premium == true && carrito[2].premium == true 
-    && carrito[3].premium == true && carrito[4].premium == true) {
-    console.log("No tienes que pagar gastos de envio");
+    && carrito[3].premium == true && carrito[3].premium == true)
+    {    console.log("No tienes que pagar gastos de envio");
  } else {
      console.log("Tienes de pagar gastos de envio ")
  }
@@ -101,19 +101,19 @@ for (i=0;i<carrito.length;i++){
 
 let total = 0
 
- for (i=0;i<carrito.length; i++){
+  for (i=0;i<carrito.length; i++){
     
-   total= total + (carrito[i].price*carrito[i].count);
+    total= total + (carrito[i].price*carrito[i].count);
   
- }
- console.log("Precio total de la compra"+ ":" + total + "$")
-
- if (total > 50 ){
-    console.log("-----Tu compra supera los 100$ asi que le aplicamos un 5%-------");
-     descuento = total - (total*0.05);
-    console.log("Precio final"+ ":"+ descuento + "$");
-  }else{
-     console.log("la compra no supera los 100$ asi que no tiene descuento");
   }
+  console.log("Precio total de la compra"+ ":" + total + "$")
+
+  if (total > 50 ){
+     console.log("-----Tu compra supera los 100$ asi que le aplicamos un 5%-------");
+      descuento = total - (total*0.05);
+     console.log("Precio final"+ ":"+ descuento + "$");
+   }else{
+      console.log("la compra no supera los 100$ asi que no tiene descuento");
+   }
 
 
