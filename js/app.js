@@ -63,7 +63,7 @@ const carrito = [
 
 //  EJERCICIO -3-  Total del carrito de compra
 
-   let total = 0
+   var total = 0
    for (i=0;i<carrito.length;i++){
        total = total + (carrito[i].price * carrito[i].count); 
    }
